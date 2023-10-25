@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+:root {
+  --primary: #3498db;
+  --secondary: #eaecee;
+  --white: #ffffff;
+  --black: #000000;
+  --button: #4d5656;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+  background: var(--primary);
+  padding: 30px 50px 30px 50px;
+  border-radius: 25px;
+}
+
+.calculator .value {
+  grid-column: span 6;
+  height: 100px;
+  text-align: right;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  background: var(--secondary);
+  outline: none;
+  padding: 10px;
+  color: var(--black);
+  font-size: 18px;
+  margin: 0px 1px 2px 1px;
+}
+
+.calculator .bottom-border {
+  grid-column: span 6;
+  height: 25px;
+  text-align: right;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--secondary);
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  margin: 2px 1px 0px 1px;
+}
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: var(--white);
+  background: var(--button);
+  place-items: center;
+  user-select: none;
+  margin: 1px;
+}
+
+.calculator span:hover {
+  color: var(--black);
+  background: var(--secondary);
+}
+
+.calculator span:active {
+  color: var(--white);
+  background: var(--button);
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 122px;
+}
+
+.calculator span.equal {
+  grid-column: span 2;
+  width: 122px;
+}
+
+.calculator .top {
+  grid-column: span 6;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.calculator .top-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--white);
+  user-select: none;
+}
+
+.calculator .footer {
+  grid-column: span 6;
+  text-align: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.calculator .footer-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--white);
+  user-select: none;
+}
+
+.calculator .footer-text:hover {
+  opacity: 0.7;
+}

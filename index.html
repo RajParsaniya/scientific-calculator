@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="icon" href="src/assets/icon.png"/>
+</head>
+
+<body>
+<form class="calculator" name="calc">
+    <p class="top top-text">Scientific Calculator</p>
+
+    <input class="value" type="text" name="txt" readonly=""/>
+    <span class="num clear" onclick="document.calc.txt.value =''">c</span>
+    <span class="num" onclick="clearFunction()">&#8678;</span>
+    <span class="num" onclick="plusMinus()">&#177;</span>
+    <span class="num" onclick="piFunction()">∘</span>
+    <span class="num" onclick="expFunction()">e</span>
+
+    <span class="num" onclick="sinFunction()">sin</span>
+    <span class="num" onclick="cosFunction()">cos</span>
+    <span class="num" onclick="tanFunction()">tan</span>
+    <span class="num" onclick="logFunction()">log</span>
+    <span class="num" onclick="radFunction()">rad</span>
+    <span class="num" onclick="inFunction()">In</span>
+
+    <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+    <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+    <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+    <span class="num" onclick="document.calc.txt.value +='/'">&#247;</span>
+    <span class="num" onclick="percentageFunction()">%</span>
+    <span class="num" onclick="document.calc.txt.value += '^'">^</span>
+
+    <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+    <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+    <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+    <span class="num" onclick="document.calc.txt.value +='*'">&#215;</span>
+    <span class="num" onclick="pieFunction()">&#x003C0;</span>
+    <span class="num" onclick="factorialFunction()">!</span>
+
+    <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+    <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+    <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+    <span class="num" onclick="document.calc.txt.value +='-'">&#8722;</span>
+    <span class="num" onclick="sqrtFunction()">&#8730;</span>
+    <span class="num" onclick="squreFunction()">x ²</span>
+
+    <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+    <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+    <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+    <span class="num" onclick="document.calc.txt.value +='+'">&#43;</span>
+    <span class="num equal" onclick="equalFunction()">=</span>
+
+    <input class="bottom-border" readonly=""/>
+
+    <p class="footer">
+        <a
+                href="https://github.com/RajParsaniya"
+                target="_blank"
+                class="footer-text"
+        >Design By Raj Parsaniya</a
+        >
+    </p>
+</form>
+<script src="src/js/jquery.js"></script>
+</body>
+</html>
